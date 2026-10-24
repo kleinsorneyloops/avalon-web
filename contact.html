@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Avalon Solutions</title>
+  <meta name="description" content="Get in touch with the Avalon Solutions team. We work by appointment and respond within one business day.">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="page-body">
+
+  <nav>
+    <a href="/" class="nav-logo">Avalon Solutions</a>
+    <ul class="nav-links">
+      <li><a href="/approach.html">Approach</a></li>
+      <li><a href="/discover.html">Discover</a></li>
+      <li><a href="/contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Get in touch</span>
+      <h1>We work by appointment.</h1>
+      <div class="divider"></div>
+      <p class="lead">Tell us a little about your situation and what you're looking for. We'll be in touch within one business day to find a time that works.</p>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <div class="container">
+      <div class="cols">
+
+        <div>
+          <span class="eyebrow">Before you reach out</span>
+          <div class="divider"></div>
+          <p>You don't need to know exactly what you need. Most people who contact us are simply at the point where they know they should have a plan but aren't sure where to start.</p>
+          <br>
+          <p>That's exactly what we're here for. Tell us where you are and we'll take it from there.</p>
+          <br>
+          <p style="font-size: 0.85rem; color: var(--mid);">We're licensed in Colorado and California. If you're outside those states, reach out anyway — we may be able to assist or point you in the right direction.</p>
+        </div>
+
+        <div>
+          <form name="contact" method="POST" netlify netlify-honeypot="bot-field">
+            <input type="hidden" name="subject" value="New contact from avalonprotects.com">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;">
+              <label>Do not fill this out: <input name="bot-field"></label>
+            </p>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="e.g. Colorado" autocomplete="address-level1">
+              </div>
+
+              <div class="form-group full">
+                <label for="interest">Primary interest</label>
+                <select id="interest" name="interest">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="life-insurance">Life insurance</option>
+                  <option value="income-protection">Income &amp; disability protection</option>
+                  <option value="business-coverage">Business coverage</option>
+                  <option value="estate-planning">Estate planning &amp; legacy</option>
+                  <option value="group-benefits">Group benefits</option>
+                  <option value="not-sure">Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="message">Tell us about your situation</label>
+                <textarea id="message" name="message" placeholder="A few sentences is plenty — we'll ask the right questions from there."></textarea>
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit">Send message</button>
+            </div>
+
+            <p class="form-note">We respond within one business day. Your information is never shared or sold.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">Avalon Solutions</div>
+    <p class="footer-copy">
+      Avalon Solutions is an independent life insurance advisory firm licensed in Colorado and California.<br>
+      © 2026 Avalon Solutions. All rights reserved. Licensed insurance advisors. Not affiliated with any single carrier.
+    </p>
+  </footer>
+
+</body>
+</html>
